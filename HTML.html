@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>championTask</title>
+    <link rel="stylesheet" href="main.css">
+    <link  href="http://fonts.googleapis.com/css?family=poppins:wght@400;&display=swap" rel="stylesheet" >
+    
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a class="logo" href="home">Wallstreet<span >Task</span></a>
+        <img id="mobile-cta" class="mobile-menu" src="css/images/frontend/menu.svg" alt="menu svg">
+        
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit"src="css/images/frontend/exit.svg" alt="exit">
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            
+            
+            <ul class="secondary-nav">
+                <li><a href="#">Contact</a></li>
+                <li class="Go-Premium-Cta"><a href="#">Go Premium</a></li>          
+                
+
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">It's Nitty &AMP; Gritty</p>
+            <h1 class="head">An App That Grant<br>Good Workout Task</h1>
+            <div class="hero-cta">
+
+                <a href="8" class="primary-cta">Try for free</a>
+                <a href="8" class="watch-video-cta">
+                    <img src="css/images/frontend/watch.svg" alt="">Watch a Video
+                </a>
+            </div>
+        </div>
+        <img src="css/images/frontend/illustration.svg" alt="">
+    </div>
+
+</section>
+
+<section class="feature-section">
+    <div class="container"></div>
+    <ul class="feature-list">
+        <li>Unlimited Task</li>
+        <li>workout Task Reminder</li>
+        <li>Programme of Events</li>
+        <li>Daily Task corodinations</li>
+        <li>Real Time Utilization</li>
+        <li>Other Premium Features</li>
+    </ul>
+<img src="css/images/frontend/holding-phone.jpg" alt="">
+</section>
+
+<section class="testimonial-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="css/images/frontend/ERIC (2).JPG" alt="">
+
+                <blockquote>I think this is the best workout facility in town. Thier equippments are very much up-to-standard. state-of-the-art workout facility if i must say.</blockquote>
+                    <cite>-Eric Imojara</cite>
+                   
+                
+            </li>
+            <li>
+                <img src="css/images/frontend/RAPEAL.jpg" alt="">
+
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempore dignissimos id et illo laudantium, nihil atque. Voluptatem, in aut praesentium eveniet eaque, delectus accusamus quibusdam aliquid quisquam expedita non.</blockquote>
+                    <cite>-Rapheal Umanah</cite>
+                
+            </li>
+            <li>
+                <img src="css/images/frontend/person.jpg" alt="">
+
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempore dignissimos id et illo laudantium, nihil atque. Voluptatem, in aut praesentium eveniet eaque, delectus accusamus quibusdam aliquid quisquam expedita non.</blockquote>
+                    <cite>-Cucurella John</cite>
+                
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form action="">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="name" >
+
+               <P> <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email"></P>
+
+               <P> <label for="Message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea></P>
+                
+                <input type="submit" class="send-message-cta" value="send message">
+            </form>
+        </div>
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.6460221390944!2d7.938361614263543!3d4.998324840397874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067f812510e169d%3A0x1a80f277e88d63c4!2sIbom%20Tropicana%20Entertainment%20Centre%20Uyo!5e0!3m2!1sen!2sng!4v1647604798103!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('menu-btn');
+        })
+
+
+    </script>
+
+</body>
+</html>
